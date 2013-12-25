@@ -2,8 +2,9 @@ myProjects
 ==========
 
 Regarding ImageGallery:  Please note that I hacked this in one day, so there are some basic functionalities missing:
-  logging out (and destroying session id), as well as some UI aesthetics.  But, the fundamentals of what I wanted
-  to get at with this project, for the most part, are all there.  
+  logging out (and destroying session id), as well as some UI aesthetics, and most importantly, the registration.
+  So to log in, the user must manually input his username and password into the MYSQL database.  But, the 
+  fundamentals of what I wanted to get at with this project, for the most part, are all there.  
   
 Regarding parser:  I created a parser called GOKU, written in Java.  I was able to solve some Euler problems which
   was pretty cool.
