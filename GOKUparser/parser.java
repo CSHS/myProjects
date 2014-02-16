@@ -18,33 +18,16 @@
       public static String a = "";
       public static int returner =0;
    
+	  /**Accepts an input.txt and outputs the result in parser.out.**/
       public static void main(String[] args) throws Exception
       {
-      //Short circuiting, loops: while
-       //factorials
-        /* Scanner sc = new Scanner(System.in);
-         String s = sc.next();
-         int used = Integer.parseInt(s);
-         int product = used;
-         used--;
-         while (used!=0)
-         {
-            product*=used;
-            used--;
-         }
-         System.out.println(product +"");*/
-      	
-       //pascals (binomial expansion)
-         //Scanner sc3 = new Scanner(new File("calfflac.in"));
-         //Scanner sc3 = new Scanner(System.in);
-         //String s2 = sc3.nextLine();
          out = new PrintWriter(new BufferedWriter(new FileWriter("parser.out")));
          check=true;
          check2=true;
          Scanner s=null;
          stack.push(ha);
          try {
-            s = new Scanner(new File("calfflac5.txt"));
+            s = new Scanner(new File("input.txt"));
          }
             catch (Exception e)
             {
@@ -68,17 +51,7 @@
       
       }
    	
-      /*private static String remover(String gangnam)
-      {
-         String returner="";
-         if (gangnam.substring(gangnam.length()-1,gangnam.length()).equals(";"))
-         { returner = gangnam.substring(0,gangnam.length()-1);}
-         else
-         {returner=null;}
-       
-         return returner;
-      }*/
-   	
+   	  /**parser for GOKU language **/
       public static void parse(Scanner scan) throws Exception
       {
          while (scan.hasNextLine())
@@ -133,31 +106,11 @@
                   }
                   body+=temp100+" ";
                }
-               //String body2="";
-               //for (int jlo=0;jlo<body.length()-2;jlo++)
-               //{
-                 // body2+=body.substring(jlo,jlo+1);
-               //}
-                 // if (!(temp100.equals("{")))
-                  //{
-                   //  body+=temp100+" ";
-                 // }
-                  //temp100=scan.next();
-               
+             
+			   //FunctionDef is a custom made class of any functions/methods created in GOKU.
                FunctionDef method = new FunctionDef(name,args,body);
                ha3.put(name, method);
             }
-                         //methods in parsedown method and connect the variables to the numbers, put in hashmap, and put in stack,and put scanner in body to parsedown.
-             //return statement.........
-            /*else if (temp2.equals("add"))
-            {
-               if (partOflist(temp13) && ha2.containsKey(temp13.substring(0,1)))
-               {
-                  addTolist(temp13, scan);
-               }
-               else
-                  check2 = false;
-            }*/
             else if (temp2.equals("list"))
             {
                String temp3 = scan.next();
@@ -201,7 +154,7 @@
                   check2 = false;
                stack.push(hatemp);
             }
-            else if (temp2.equals("print"))      // 
+            else if (temp2.equals("print"))
             {
                String hold= scan.next();
                if (partOflist(hold)==true)
@@ -525,13 +478,11 @@
          {
             returner = true;
          }
-         return returner;//the hashmap isn't completely removing both parts of its elements
+         return returner;
       }
-   	//if statements need boolean, true as nonzero number (eg, 1 and false=0), && and ||
    	
-      public static int parsedown(Scanner scan) throws Exception             //make computer know what a and b are...........................
-      {//make parsedown ignore white space. look at scanner api........................
-      //include a_whatever into your "let" statement.
+      public static int parsedown(Scanner scan) throws Exception
+      {
          if (scan.hasNextInt())
          {
             return scan.nextInt();

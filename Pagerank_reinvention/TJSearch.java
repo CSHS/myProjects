@@ -16,7 +16,7 @@
          System.out.print("Enter:");
          Scanner f = new Scanner(System.in);
          String g = f.nextLine().toLowerCase();
-			long startTime = System.currentTimeMillis();
+		 long startTime = System.currentTimeMillis();
          String[] split = g.split(" ");
       
       	
@@ -48,9 +48,7 @@
             /* test against elements after j to find the smallest */
                //Iterator it = myPowerSet.iterator();
                for (int i = j+1; i < myPowerSet.size();i++) {
-               /* if this element is less, then it is the new minimum */  
                   if (myPowerSet.get(i).size() < myPowerSet.get(j).size()) {
-                  /* found new minimum; remember its index */
                      j = i;
                   }
                }
@@ -64,7 +62,7 @@
                   myPowerSet.remove(a+1);
                }
             }
-         	/**process the results*/
+         	/**process the results with PageRank*/
             for (ArrayList<String> cifu2 : myPowerSet) {
                if (cifu2.size()!=0)
                {
@@ -96,7 +94,7 @@
                         }
                      
                         Double[] temp3 = (Double[]) (temper.toArray(new Double[temper.size()]));
-                        Arrays.sort(temp3); //nullpointerexception here. figure out why.
+                        Arrays.sort(temp3);
                         ResultSet set3 = s3.executeQuery("SELECT * FROM pages LEFT JOIN Pageranks on pages.id = Pageranks.page_id");
                         for (int q2=0;q2<temp3.length;q2++)
                         {
@@ -118,9 +116,7 @@
                                     jet.add(titular3);
                                     jet2.add(titular);
                                     jet3.add(titular2);
-                                 }//troll may make a bs page with the exact title page, but if there is another bs page with same
-											//title page, the rank of that is so low that it will hardly show up. troll webpages will be infrequent with a lot of legitimate results.
-											//there may be another bs page, with 
+                                 } 
                               }
                            }
                         }
@@ -135,9 +131,6 @@
                            jet3.add(set2.getDouble("pagerank"));
                         }
                      }
-                  
-                                	//stuff into array, sort by pageranks, and print urls.
-                  //System.out.println(set.getString("url"));
                   
                   }
                	
@@ -174,11 +167,9 @@
                try
                {
                   conn.close();
-						long endTime   = System.currentTimeMillis();
+				  long endTime   = System.currentTimeMillis();
                   long totalTime = endTime - startTime;
                   System.out.println("done with processing time of: " + ((totalTime*.001)/60));
-
-                  //System.out.println("derr");
                }
                   catch (Exception e){
                      e.printStackTrace();
