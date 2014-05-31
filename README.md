@@ -1,8 +1,10 @@
 myProjects
 ==========
 
-Regarding ImageGallery:  Please note that I hacked this in less than a day, so there are some basic functionalities         missing: logging out (and destroying sessions), as well as some UI aesthetics, and most importantly, the registration.
+Regarding ImageGalleryPHP:  Please note that I hacked this in less than a day, so there are some basic functionalities         missing: logging out (and destroying sessions), as well as some UI aesthetics, and most importantly, the registration.
   So to register, the user must manually input his username and password into the MYSQL database.  This project was         intended to exemplify a small portion of my abilities in web dev, particularly in the use of Ajax in linking the front    with the back-end.
+  
+  *"imageGallery" has the same concept as ImageGalleryPHP.  BUT, it is remastered in Django and has a UI alike Windows 8.
   
 Regarding parser:  I created a parser called GOKU, written in Java.  I was able to solve some Project Euler problems with   it, which was pretty cool.
   

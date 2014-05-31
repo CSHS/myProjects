@@ -1,0 +1,65 @@
+body
+{
+	overflow-x: hidden;
+}
+
+#container{
+	position: relative;
+	text-align: center;
+	display: inline;
+	float: right;
+	margin: 0px 500px 0px 0px;
+}
+
+#main_content{
+	margin-top: 45px;
+}
+
+#failed{
+	color:red;
+}
+#exists{
+	color: orange;
+}
+#success{
+	color: green;
+}
+
+#second {
+	margin-top: 5%;
+	margin-left: 27%;
+	width: 45%;
+}
+
+.arrow{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#picture_rows{
+	height: 48px;
+	/*overflow-y: scroll;*/
+	overflow: hidden;
+}
+
+#images{
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+#fade_in{
+	/*display: none;*/
+	float: left;
+	position: fixed;
+	width: 21%;
+	height: 100%;
+	background-color: green;
+	display: inline-block;
+}
+#uploader{
+	
+}
+
+#upload_files{
+
+}

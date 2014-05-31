@@ -1,0 +1,55 @@
+body
+{
+	overflow-x: hidden;
+}
+
+#container{
+	position: relative;
+	text-align: center;
+}
+
+#main_content{
+	margin-top: 45px;
+}
+
+#failed{
+	color:red;
+}
+#exists{
+	color: orange;
+}
+#success{
+	color: green;
+}
+
+#second {
+	margin-top: 5%;
+	margin-left: 27%;
+	width: 45%;
+}
+
+.arrow{
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#picture_rows{
+	height: 48px;
+	/*overflow-y: scroll;*/
+	overflow: hidden;
+}
+
+#images{
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+#uploader{
+	float: right;
+	margin-right: 10%;
+}
+
+#upload_files{
+	display: none;
+	float: right;
+}

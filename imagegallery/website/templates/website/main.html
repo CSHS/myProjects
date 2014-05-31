@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'images/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" data-angle='stylesheet' href="{% static 'images/css/bootstrap-arrows.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'images/css/main.css' %}">
+		<script type="text/javascript" src="{% static 'images/js/jquery-1.10.2.js' %}"></script>
+		<!--script src="angular.min.js"></script-->
+		<script type="text/javascript" src="{% static 'images/js/main.js' %}"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="main_content">
+				
+			</div>
+			
+			<div id="errors"> 
+			</div>
+			
+			<div id="second">
+				<section>
+					<span id='arrow' class='arrow'></span>
+					<div id="picture_rows">
+				
+					</div>   
+					<span id='arrow2' class='arrow' data-angle='180'></span>
+				</section>
+			</div>
+		</div>
+		
+		<div id="fade_in">
+			<!--<button id="uploader" class="btn btn-default">Upload image</button>-->
+			<h3>Upload Image</h3>
+			<div id="upload_files">
+				<form method="POST" enctype="multipart/form-data">
+					<label for="file">Filename:</label>
+					<input type="file" name="file" id="file"><br>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</body>
+	
+	{% load staticfiles %}
+	<script type="text/javascript" src="{% static 'images/js/bootstrap-arrows.min.js' %}"></script>
+</html>
