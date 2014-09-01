@@ -8,7 +8,7 @@ myProjects
   
 <h4>parser</h4>:  I created a parser called GOKU, written in Java.  I was able to solve some Project Euler problems with   it, which was pretty cool.
   
-<h4>Pagerank</h4>:  I hacked and reimplemented the pagerank algorithm in Java for fun; nothing too serious.                PageRank.java stores the actual algorithm.  JSoup was an external file I used to parse data from the site I crawled.      TJSearch is where one can enter key words, and the script will return a list of links ranked in order of relevance by     the algorithm, with the mention of the keywords.
+<h4>Pagerank</h4>:  I hacked and reimplemented the pagerank algorithm in Java for fun; nothing too serious.                PageRank.java stores the actual algorithm.  JSoup was an external file I used to parse data from the site I crawled.      TJSearch is where one can enter key words, and the script will return a list of links ranked in order of relevance by     the algorithm, with the mention of the keywords.<br>
 
 Note: For the latter two projects, there are not many invariants or annotations describing each part of the code; I apologize.  I hacked these at a quick rate a little more than 3 years ago, when good coding habits were not as strongly encouraged as they are now.  I will annotate them soon.
   
