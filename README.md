@@ -12,7 +12,7 @@ myProjects
       <li>mysql-connector-java using JDBC to connect to MYSQL database, and</li>
       <li>JSoup executable jar file to help parse data in Soup.java from a crawled site.</li>
    </ul>
-   TJSearch.java is where one enters some key words, and the script will, after running Soup.java and PageRank.java, return a list of weblinks ranked in order of relevance by the algorithm.<br><br>
+   TJSearch.java is where one enters some key words, and the script will, after running Soup.java and PageRank.java, return a list of weblinks ranked in order of relevance by the algorithm.
 <br><p>Created in 2013</p>
   
 Enjoy!
