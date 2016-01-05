@@ -5,7 +5,7 @@ myProjects
   
 <h4>imageGallery</h4> is the same concept as <strong>ImageGalleryPHP</strong>, but remastered with the Django framework using Python and SQLite3. <br><p>Created in 2013</p>
   
-<h4>Java-written Programming Language</h4> I created a language I call GOKU, written in Java.  I was able to solve some Project Euler problems with it. <br><p>Created in 2014</p>
+<h4>Java-written Programming Language</h4> I created a language I unofficially call GOKU, written in Java, with the intention of pertaining close to the English language without being overly technical.  Measure of success: I was able to solve some Project Euler problems with it. <br><p>Created in 2014</p>
 
 <h4>Pagerank</h4> After reading the thesis paper on PageRank, I reimplemented the algorithm in Java for the pure fun and challenge of it.  PageRank.java holds the actual algorithm.  Some external libraries used were:
    <ul>
